@@ -13,6 +13,8 @@
 		9757843E279E3D0600C18BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9757843C279E3D0600C18BFA /* Main.storyboard */; };
 		97578440279E3D0D00C18BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9757843F279E3D0D00C18BFA /* Assets.xcassets */; };
 		97578443279E3D0D00C18BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97578441279E3D0D00C18BFA /* LaunchScreen.storyboard */; };
+		9757844D279E413100C18BFA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757844C279E413100C18BFA /* MovieCell.swift */; };
+		97578450279E471A00C18BFA /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9757844F279E471A00C18BFA /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		9757843F279E3D0D00C18BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97578442279E3D0D00C18BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97578444279E3D0D00C18BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9757844C279E413100C18BFA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97578450279E471A00C18BFA /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				97578438279E3D0600C18BFA /* SceneDelegate.swift */,
 				9757843A279E3D0600C18BFA /* ViewController.swift */,
 				9757843C279E3D0600C18BFA /* Main.storyboard */,
+				9757844C279E413100C18BFA /* MovieCell.swift */,
 				9757843F279E3D0D00C18BFA /* Assets.xcassets */,
 				97578441279E3D0D00C18BFA /* LaunchScreen.storyboard */,
 				97578444279E3D0D00C18BFA /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Flixter;
+			packageProductDependencies = (
+				9757844F279E471A00C18BFA /* AlamofireImage */,
+			);
 			productName = Flixter;
 			productReference = 97578433279E3D0600C18BFA /* Flixter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 9757842A279E3D0600C18BFA;
+			packageReferences = (
+				9757844E279E471A00C18BFA /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 97578434279E3D0600C18BFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			files = (
 				9757843B279E3D0600C18BFA /* ViewController.swift in Sources */,
 				97578437279E3D0600C18BFA /* AppDelegate.swift in Sources */,
+				9757844D279E413100C18BFA /* MovieCell.swift in Sources */,
 				97578439279E3D0600C18BFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9757844E279E471A00C18BFA /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9757844F279E471A00C18BFA /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9757844E279E471A00C18BFA /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9757842B279E3D0600C18BFA /* Project object */;
 }
